@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>Getting a Packet Trace | 老鹰的个人空间</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="come from apple developer
+Q:  I’m trying to debug a network problem. How do I get a packet trace?
+A: This depends on your platform:
+There are a number of programs for OS X that let you gather and ana">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Getting a Packet Trace">
+<meta property="og:url" content="http://chenglini.github.io/2016/05/03/packetsTrack/index.html">
+<meta property="og:site_name" content="老鹰的个人空间">
+<meta property="og:description" content="come from apple developer
+Q:  I’m trying to debug a network problem. How do I get a packet trace?
+A: This depends on your platform:
+There are a number of programs for OS X that let you gather and ana">
+<meta property="og:updated_time" content="2016-05-03T14:24:11.061Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Getting a Packet Trace">
+<meta name="twitter:description" content="come from apple developer
+Q:  I’m trying to debug a network problem. How do I get a packet trace?
+A: This depends on your platform:
+There are a number of programs for OS X that let you gather and ana">
+  
+    <link rel="alternative" href="/atom.xml" title="老鹰的个人空间" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">鹰凌天下</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/tags">标签</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="#" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="/cliym" title="weibo">weibo</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/ios/" style="font-size: 10px;">ios</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://lynncheng.github.io">LynnCheng的技术博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">一个喜欢在羽毛球场上挥洒汗水，喜欢编码到半夜的攻城狮</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">鹰凌天下</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="null" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">鹰凌天下</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags">标签</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="/cliym" title="weibo">weibo</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-packetsTrack" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/03/packetsTrack/" class="article-date">
+  	<time datetime="2016-05-03T14:16:00.000Z" itemprop="datePublished">2016-05-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Getting a Packet Trace
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ios/">ios</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="https://developer.apple.com/library/mac/qa/qa1176/_index.html" target="_blank" rel="external"> come from apple developer</a></p>
+<p>Q:  I’m trying to debug a network problem. How do I get a packet trace?</p>
+<p>A: This depends on your platform:</p>
+<p>There are a number of programs for OS X that let you gather and analyze packet traces. See OS X Programs for details.    <a id="more"></a><br>iOS does not support packet tracing directly. However, if you connect your iOS device to a Mac via USB, you can use an OS X packet trace program to gather and analyze traces using the remote virtual interface feature. See iOS Packet Tracing for details.<br>Finally, Packet Trace Notes offers some hints and tips that you might find useful when dealing with packet traces.</p>
+<p>Important: Mention of third party sites and third party products is for informational purposes only and constitutes neither an endorsement nor a recommendation. Apple assumes no responsibility with regard to the selection, performance, or use of these vendors or products.<br>OS X Programs</p>
+<p>OS X supports a wide range of packet trace programs, as described in the following sections.</p>
+<p>Charles HTTP Proxy<br>Charles is an HTTP proxy that allows you to view all of the HTTP and HTTPS traffic between your machine and the Internet.</p>
+<p>CPA<br>Cocoa Packet Analyzer is a native OS X implementation of a network protocol analyzer and packet sniffer.</p>
+<p>Debookee<br>Debookee is a OS X application which allows you to see what your devices are sending over the network.</p>
+<p>FrameSeer<br>FrameSeer is an inexpensive network packet capture application for OS X.</p>
+<p>HTTP Scoop<br>HTTP Scoop is an HTTP protocol analyzer for OS X. It reconstructs complete HTTP conversations (rather than just showing the packets that make them up) and presents them in a user-friendly manner.</p>
+<p>IPNetMonitorX<br>IPNetMonitorX is a network troubleshooting toolkit for debugging Internet service problems and optimizing performance.</p>
+<p>tcpdump<br>This command line tool is built in to all versions of OS X, and is also available on many other Unix platforms. For a quick summary of how to use tcpdump, see Getting Started With tcpdump.</p>
+<p>tcpflow<br>If you’re debugging a high-level protocol, it’s nice to see the various TCP connections as streams of data rather than individual packets. The tcpflow tool can do that for you. If you’ve not used tcpflow before, there’s a quick introduction in Getting Started With tcpflow.</p>
+<p>The tcpflow tool is not built-in to OS X, but you can get it in a variety of ways.</p>
+<p>Dowload and build the source code from its home site.<br>Install it via a ‘ports’ project, like MacPorts or Fink.<br>Dowload a pre-built binary from here.<br>tcptrace<br>tcptrace is an open source tool for analyzing the TCP connections in a packet trace.</p>
+<p>Wireshark<br>Wireshark is an open source packet analyzer that has been ported to OS X. It requires X11.</p>
+<p>Wireless Diagnostics<br>Wireless Diagnostics is an application built in to OS X that lets you capture a Wi-Fi level packet trace. Such traces contain more information than a standard packet trace (for example, they show Wi-Fi’s link-layer retransmissions).</p>
+<p>You can find Wireless Diagnostics in the /System/Library/CoreServices directory; on later systems it might be in the Applications subdirectory within that directory. On OS X 10.7 the application was called Wi-Fi Diagnostics.</p>
+<p>See Wi-Fi Capture for more information about using this tool.</p>
+<p>Back to Top<br>iOS Packet Tracing</p>
+<p>iOS does not support packet tracing directly. However, if you’re developing for iOS you can take a packet trace of your app in a number of different ways:</p>
+<p>If the problem you’re trying to debug occurs on Wi-Fi, you can put your iOS device on a test Wi-Fi network. See Wi-Fi Capture for details.<br>If your app uses HTTP, you can configure your iOS device to use a debugging HTTP proxy (such as Charles HTTP Proxy).<br>In iOS 5 and later you can use the remote virtual interface facility.<br>Remote Virtual Interface<br>iOS 5 added a remote virtual interface (RVI) facility that lets you use OS X packet trace programs to capture traces from an iOS device. The basic strategy is:</p>
+<p>Connect your iOS device to your Mac via USB.<br>Set up an RVI for that device. This creates a virtual network interface on your Mac that represents the iOS device’s networking stack.<br>Run your OS X packet trace program, and point it at the RVI created in the previous step.<br>To set up an RVI, you should run the rvictl tool as shown below.</p>
+<p>$ # First get the current list of interfaces.<br>$ ifconfig -l<br>lo0 gif0 stf0 en0 en1 p2p0 fw0 ppp0 utun0<br>$ # Then run the tool with the UDID of the device.<br>$ rvictl -s 74bd53c647548234ddcef0ee3abee616005051ed</p>
+<p>Starting device 74bd53c647548234ddcef0ee3abee616005051ed [SUCCEEDED]</p>
+<p>$ # Get the list of interfaces again, and you can see the new virtual<br>$ # network interface, rvi0, added by the previous command.<br>$ ifconfig -l<br>lo0 gif0 stf0 en0 en1 p2p0 fw0 ppp0 utun0 rvi0<br>Now that you know the name of the RVI, you can point your packet trace tool at it. For example, here’s how you might run tcpdump to take a packet trace from the RVI and write it to the file trace.pcap.</p>
+<p>$ sudo tcpdump -i rvi0 -w trace.pcap<br>tcpdump: WARNING: rvi0: That device doesn’t support promiscuous mode<br>(BIOCPROMISC: Operation not supported on socket)<br>tcpdump: WARNING: rvi0: no IPv4 address assigned<br>tcpdump: verbose output suppressed, use -v or -vv for full protocol decode<br>listening on rvi0, link-type RAW (Raw IP), capture size 65535 bytes<br>When you’re done you can remove the RVI with the following command.</p>
+<p>$ rvictl -x 74bd53c647548234ddcef0ee3abee616005051ed</p>
+<p>Stopping device 74bd53c647548234ddcef0ee3abee616005051ed [SUCCEEDED]<br>Important: The RVI represents the entire networking stack of the iOS device; there’s no way to trace a specific interface on the device, or even learn which packets were transferred on which interface.<br>Remote Virtual Interface Troubleshooting<br>This section explains how to resolve some common issues with RVI.</p>
+<p>If your Mac doesn’t have the rvictl tool, make sure you install Xcode 4.2 or later.</p>
+<p>If the device is running iOS 7 or later, you must use the RVI support installed by Xcode 5.0 or later.</p>
+<p>The RVI support installed by Xcode 5.0 works best on OS X 10.9 and later. Specifically, if you run tcpdump on 10.8.x and see the message “unknown ip 0”, you will need to update to 10.9 to access those packets via RVI.</p>
+<p>If rvictl fails with the message:</p>
+<p>bootstrap_look_up(): 1102<br>make sure that that the com.apple.rpmuxd launchd job is loaded correctly. The following command should print information about the job.</p>
+<p>$ sudo launchctl list com.apple.rpmuxd<br>{<br>    “Label” = “com.apple.rpmuxd”;<br>    …<br>};<br>If it fails, it could be because the job is unloaded. You can force it to load with the following command.</p>
+<p>$ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.rpmuxd.plist<br>Back to Top<br>Packet Trace Notes</p>
+<p>Getting Started With tcpdump<br>To get started with tcpdump, try the following command.</p>
+<p>sudo tcpdump -i en0 -w trace.pcap<br>The elements of this command line are:</p>
+<p>The sudo command causes tcpdump to run with privileges, which is necessary in order to capture network traffic.<br>The -i en0 option tells tcpdump to capture packets on the first Ethernet interface. By default, tcpdump will use the first non-loopback interface it can find (usually en0). To specify a different interface, just change en0 to the BSD name of that interface. For example, the AirPort interface is typically en1.<br>To get a list of network interfaces and their user-visible names, run the networksetup tool with the -listallhardwareports argument.</p>
+<p>The -w trace.pcap parameter tells tcpdump to write the packets to a file called trace.pcap.<br>Note: If you’re running on a system prior to OS X 10.7 you should also supply the -B 524288 option, which increases the packet capture buffer size to 512 KiB. This is important to avoid dropped packets on high-speed networks. See Dropped Packets for more information about this. This larger buffer size is the default on OS X 10.7 and later.<br>If you’re running on a system prior to OS X 10.6 you should also supply the -s 0 option, which tells tcpdump to capture the full packet rather than just the first 68 bytes. This option is the default on OS X 10.6 and later.</p>
+<p>In response to this command, tcpdump will begin to capture packets and put them in the trace.pcap file. When you want to stop capturing, interrupt tcpdump by typing ^C. You can then display the contents of the packets as text using the following command.</p>
+<p>tcpdump -n -e -x -vvv -r trace.pcap<br>New elements of the command line are:</p>
+<p>The -n option means that addresses are not converted to domain names, which speeds things up considerably.<br>The -e option causes tcpdump to display the link-level header for each packet.<br>The -x option causes the contents of the packet to also be displayed in hex.<br>The -vvv option makes tcpdump’s output as verbose as possible.<br>By specifying -r trace.pcap option you tell tcpdump to read packets from the file trace.pcap rather than from a network interface. Note that you don’t need privileges to do this, so running tcpdump using sudo is not required.<br>You can also combine these steps, as shown below, but if you do this you don’t get a high-fidelity record of the packets that you captured.</p>
+<p>sudo tcpdump -i en0 -n -e -x -vvv<br>You can learn about tcpdump from the online manual and from the book TCP/IP Illustrated, Volume 1: The Protocols, W. Richard Stevens, Addison-Wesley, 1994, ISBN 0-201-63346-9. That book is also an excellent introduction to TCP/IP protocols in general.</p>
+<p>Getting Started With tcpflow<br>The tcpflow command makes it much easier to debug high-level protocols. For example, if you’re debugging an HTTP client, you can run the following command.</p>
+<p>sudo tcpflow -i en0 port 80<br>tcpflow will create a bunch of files in the current directory, each of which contains the reassembled contents of a single TCP stream. So, if you run tcpflow as shown above and then fetch the URL <a href="http://apple.com" target="_blank" rel="external">http://apple.com</a>, you can see how the HTTP redirect works.</p>
+<p>$ sudo tcpflow -i en0 port 80<br>tcpflow[953]: listening on en0<br>^C<br>tcpflow[953]: terminating<br>$ ls -lh<br>total 16<br>-rw-r–r– 1 root  quinn […] 010.000.040.015.50232-017.149.160.049.00080<br>-rw-r–r– 1 root  quinn […] 017.149.160.049.00080-010.000.040.015.50232<br>$ # This is the request.<br>$ cat 010.000.040.015.50232-017.149.160.049.00080<br>GET / HTTP/1.1<br>User-Agent: curl/7.19.4 (universal-apple-darwin10.0) libcurl/7.19.4 OpenSSL/0.9.8k zlib/1.2.3<br>Host: apple.com<br>Accept: <em>/</em></p>
+<p>$ # And this is the response.<br>$ cat 017.149.160.049.00080-010.000.040.015.50232<br>HTTP/1.1 302 Object Moved<br>Location: <a href="http://www.apple.com/" target="_blank" rel="external">http://www.apple.com/</a><br>Content-Type: text/html<br>Cache-Control: private<br>Connection: close</p>
+<p><head></head><body> This object may be found <a href="http://www.apple.com/" target="_blank" rel="external">here</a> </body><br>Loopback Issues<br>Important: You should consult the documentation that comes with your program for accurate and up-to-date information about its limitations.<br>Some packet trace programs have problems with packets being transferred to or from the trace machine (the machine running the packet trace program). To avoid these problems, separate your trace machine from the machines whose network traffic you’re tracing.</p>
+<p>As an example of this, on OS X tcpdump may display the TCP checksum of packets sent by the trace machine as bad. This is because of TCP checksum offloading; packets sent by the trace machine are captured before being handed to the network adapter, so they don’t have the TCP checksum set correctly. This is not a fatal problem; if the bad checksums bother you, you can turn off the check by passing the -K option to tcpdump.</p>
+<p>Dropped Packets<br>If you capture all the bytes of each packet, it’s very easy to overrun the kernel’s packet capture buffer. The symptoms of this overrun are that your packet trace program will report that it dropped packets.</p>
+<p>In the case of tcpdump, it prints a summary of how many packets were captured, filtered, and dropped when you stop the capture. For example:</p>
+<p>$ sudo tcpdump -i en0 -w trace.pcap<br>tcpdump: listening on en0, link-type EN10MB (Ethernet), capture size 65535 bytes<br>^C<br>94 packets captured<br>177 packets received by filter<br>0 packets dropped by kernel<br>If the dropped count is non-zero, you need to increase the packet capture buffer size by passing the -B option to tcpdump, as discussed earlier.</p>
+<p>Switches And Hubs<br>If you use a separate trace machine, you have to make sure that the trace machine can see the packets of interest. There are two ways to do this:</p>
+<p>Use a hub rather than a switch — These days it is hard to find real hubs. Most 10/100 hubs are actually switches in disguise. However, it is possible to find a 10/100 hub that only switches between the different speed segments (for example, the SMC-EZ58xxDS range).<br>Enable port mirroring — On most advanced switches it is possible to configure the switch so that all traffic is mirrored to a specific port. To learn more about this, consult the documentation for your switch.<br>Capture Hints From The Wireshark Wiki<br>The Wireshark wiki has some really useful information about how to setup your packet tracing environment.</p>
+<p>The Ethernet Capture Setup Document contains good background information for setting up your network for monitoring.<br>The Hub Reference Document contains information on various types of hubs.<br>The Switch Reference Document contains information on analysis features, such as port mirroring, found on various models of switches, including links to online documentation for those switches.<br>Wi-Fi Capture<br>Capturing packets on Wi-Fi can be tricky because conversations between one Wi-Fi client and the access point are not necessarily visible to other Wi-Fi clients. There are two easy ways to ensure that you see the relevant Wi-Fi traffic:</p>
+<p>bridge mode — If your Wi-Fi access point supports bridge mode (for example, all Apple base stations do), you can bridge the Wi-Fi on to an Ethernet and then use standard Ethernet techniques to capture a packet trace. You may not be able to see Wi-Fi to Wi-Fi traffic, but in many situations that’s not a problem.<br>Internet Sharing — If you enable Internet Sharing on your Mac, and have your Wi-Fi clients join the shared network, you can run your packet trace program on the Mac and see all the Wi-Fi traffic. If you target the Mac’s Wi-Fi interface, you will see all traffic including Wi-Fi to Wi-Fi traffic. If you target the Ethernet interface, you will only see traffic entering or leaving the Wi-Fi network.<br>Alternatively, you can use the Wireless Diagnostics application to take a Wi-Fi level packet trace. This shows all traffic visible to your Mac, including low-level Wi-Fi traffic that’s not visible with other tools. When using this tool, keep in mind the following:</p>
+<p>After running the application, you can access the packet trace feature by choosing Utilities from the Window menu and then selecting the Frame Capture tab.<br>Your Mac can’t use the Wi-Fi interface for normal network traffic while tracing.<br>You must choose a channel to trace on. It simplifies things if you configure your access point to use a specific channel rather than let it choose one automatically.<br>If the Wi-Fi network has a password, Wi-Fi encryption will make it much harder to examine the trace. To get around this, either temporarily turn off the Wi-Fi password on your network or use a separate test network that has no password.<br>Submitting A Trace With A Bug Report<br>If you’re submitting a bug report related to networking, you should consider submitting a packet trace along with your bug report. The Bug Reporting page has details on how to provide additional information with your bug report.</p>
+<p>Submitting A Trace To DTS<br>If you send a packet trace to DTS, please include the following:</p>
+<p>The system type and OS version of the trace machine.<br>The name and version of the program you used to capture the packet trace.<br>If you’ve used a program whose native file format is the libpcap file format (these include tcpdump, Wireshark, and various others), you can send us the packet trace file in that format. Otherwise, please include a copy of the packet trace in both its native format and, if that native format isn’t text, a text export of the trace as well. That way we’re guaranteed to be able to read your packet trace.<br>For each relevant machine shown in the trace, please describe the following:<br>the machine’s role in the network conversation<br>the system type and OS version<br>the machine’s IP address<br>the machine’s hardware address (also known as the Ethernet address or MAC address)</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/04/30/测试/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">下半年阅读书单</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="packetsTrack" data-title="Getting a Packet Trace" data-url="http://chenglini.github.io/2016/05/03/packetsTrack/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"chenglini"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 鹰凌天下
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
